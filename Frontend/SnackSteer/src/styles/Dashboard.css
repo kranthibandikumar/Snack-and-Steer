@@ -1,0 +1,200 @@
+/* Dashboard Container */
+.dashboard-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #f8f9fa, #d3e0ea);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 30px;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: #007bff; /* Light blue hover effect */
+    transform: scale(1.1);
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    margin-top: 80px; /* Space below the navbar */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* General Card Styles */
+.dashboard-content div {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-content div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* User Information Section */
+.user-info h2 {
+    color: #007bff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    color: #555;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Map Section */
+.map {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map h2 {
+    color: #007bff;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.map p {
+    color: #555;
+    font-size: 16px;
+}
+
+.map a {
+    color: #007bff;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #007bff;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.map a:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Online Games Section */
+.online-games {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.online-games h2 {
+    color: #007bff;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.online-games a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 12px 20px;
+    background: #007bff;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.online-games a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Transport Option Section */
+.transport-option h2 {
+    color: #007bff;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.transport-option p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Background Animation */
+@keyframes gradientBackground {
+    0% {
+        background: #e0eafc;
+    }
+    50% {
+        background: #d3e0ea;
+    }
+    100% {
+        background: #e0eafc;
+    }
+}
+
+body {
+    animation: gradientBackground 8s ease infinite;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .dashboard-content {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar li {
+        margin-bottom: 10px;
+    }
+
+    .dashboard-content div {
+        padding: 15px;
+    }
+}

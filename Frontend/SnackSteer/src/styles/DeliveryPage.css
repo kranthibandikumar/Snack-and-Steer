@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Main Container */
+.container {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* Input Section */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-container button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+.input-container .yellow-btn {
+  background-color: #ffcc00;
+}
+
+.input-container .yellow-btn:hover {
+  background-color: #e6b800;
+}
+
+.input-container .green-btn {
+  background-color: #28a745;
+}
+
+.input-container .green-btn:hover {
+  background-color: #218838;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensure the content wraps on smaller screens */
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.map-container {
+  width: 60%; /* Map takes 60% of the screen */
+  height: 400px;
+}
+
+.restaurants-list {
+  width: 35%; /* Restaurants list takes 35% of the screen */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.restaurants-list h4 {
+  color: #007bff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.restaurants-list ul {
+  list-style: none;
+}
+
+.restaurants-list li {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.send-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background-color: #0056b3;
+}

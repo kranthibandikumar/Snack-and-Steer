@@ -1,0 +1,111 @@
+/**
+ * User Detail Form Container
+ *
+ * @format
+ */
+
+.user-detail-form-container {
+  background-color: #ffffff; /* White background for a clean look */
+  color: #333333; /* Dark gray text for readability */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  max-width: 700px;
+  margin: 30px auto;
+  text-align: left; /* Align text to the left for form readability */
+}
+
+/* Heading */
+.user-detail-form-container h2 {
+  color: #0066cc; /* Calming blue for the heading */
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Form */
+.user-detail-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Labels and Inputs */
+.user-detail-form label {
+  color: #555555; /* Darker gray for labels */
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.user-detail-form input[type="text"],
+.user-detail-form input[type="email"],
+.user-detail-form input[type="password"],
+.user-detail-form input[type="date"],
+.user-detail-form select,
+.user-detail-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc; /* Soft border */
+  border-radius: 6px;
+  background-color: #f9f9f9; /* Light background for input fields */
+  color: #333;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.user-detail-form input:focus,
+.user-detail-form select:focus,
+.user-detail-form textarea:focus {
+  border-color: #0066cc; /* Blue focus color for better visibility */
+}
+
+/* Profile Picture Upload */
+.user-detail-picture-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-detail-picture-placeholder {
+  width: 130px;
+  height: 130px;
+  background-color: #e0e0e0; /* Light gray background */
+  border-radius: 50%; /* Circle shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #0066cc; /* Dashed border */
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+/* Button */
+.user-detail-form button {
+  padding: 12px 25px;
+  background-color: #0066cc; /* Primary button color */
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.user-detail-form button:hover {
+  background-color: #004d99;
+  transform: scale(1.03);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .user-detail-form-container {
+    padding: 20px;
+  }
+
+  .user-detail-form button {
+    width: 100%;
+  }
+}

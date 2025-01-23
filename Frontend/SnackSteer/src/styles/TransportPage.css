@@ -1,0 +1,172 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  /* Container */
+  .transport-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px;
+    height: 100vh;
+    background-color: #f4f4f9;
+    overflow-y: auto;
+    
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #4caf50;
+  }
+  
+  .header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 18px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Transport Options Section */
+  .transport-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Adjust the gap between the sections */
+    margin-bottom: 50px;
+    width: 80%;
+   
+  }
+  
+  /* Option and Vehicle Tracking Section */
+  .option,
+  .vehicle-tracking {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 50px;
+    flex: 1;
+   
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Option Heading */
+  h2 {
+    color: #4caf50;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  /* Transport Option */
+  .transport-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .transport-option input[type="radio"] {
+    display: none;
+  }
+  
+  .transport-option .checkmark {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #4caf50;
+    margin-right: 10px;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .transport-option input[type="radio"]:checked + .checkmark {
+    background-color: #4caf50;
+  }
+  
+  .transport-option input[type="radio"]:checked + .checkmark::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .transport-option input[type="radio"]:focus + .checkmark {
+    box-shadow: 0 0 5px 2px #4caf50;
+  }
+  
+  /* Custom Input */
+  .custom-input {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    background-color: #f4f4f9;
+    color: #333;
+    outline: none;
+  }
+  
+  .custom-input::placeholder {
+    color: #888;
+  }
+  
+  /* Vehicle Tracking Section */
+  .vehicle-tracking p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .track-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4caf50;
+    text-decoration: none;
+    padding: 12px 20px;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .track-link:hover {
+    background-color: #4caf50;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #555;
+    font-size: 14px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+  }
+  

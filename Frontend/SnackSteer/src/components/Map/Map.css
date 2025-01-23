@@ -1,0 +1,39 @@
+.map-container-wrapper {
+    padding: 20px;
+    border: 1px solid;
+  }
+  
+  .map-component {
+    border-radius: 10px;
+  }
+  
+
+  
+  .info-window {
+    background-color: #fff;
+    padding: 10px;
+  }
+  
+  .restaurant-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .send-restaurant-details-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .restaurant-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .restaurant-address {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  

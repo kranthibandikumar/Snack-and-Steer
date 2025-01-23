@@ -1,0 +1,158 @@
+/* @format */
+
+/* Main Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  width: 100%; /* Full width of the viewport */
+  padding: 20px;
+  background-color: #f0f4f4; /* Soft white background for overall layout */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Allow wrapping of content */
+}
+
+/* Left Side */
+.left {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  
+}
+
+/* Right Side */
+.right {
+  width: 35%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+/* Section Styles */
+.user-info, .food-order, .online-games, .emergency-support, .transport-option {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #b0f2c9; /* Light green background for sections */
+  color: #080808; /* Dark text for contrast */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  height: auto; /* Sections take as much space as required */
+}
+
+#link {
+  text-decoration: none;
+  color: rgb(105, 101, 227);
+  cursor: pointer;
+}
+#link:hover {
+  color: red;
+}
+
+/* Section Titles */
+.user-info h2, .online-games h2, .emergency-support h2, .transport-option h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Paragraphs */
+.user-info p, .online-games a, .emergency-support p, .transport-option p {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* Links */
+.online-games a, .view-more-link {
+  color: #000000; /* Light green for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.online-games a:hover, .view-more-link:hover {
+  text-decoration: underline;
+}
+
+/* Map Section */
+.map {
+  height: 100%; /* Ensure map section takes full available height */
+  width: 100%;
+  background-color: #e0e0e0; /* Placeholder color */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Transport Option */
+.transport-option {
+  background-color: #b0f2c9; /* Light green */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* View More Link */
+.view-more-link {
+  font-size: 1rem;
+  color: #060606; /* Soft green for "Learn More" link */
+}
+
+.view-more-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  /* Stack sections vertically for small screens */
+  .dashboard-container {
+    padding: 10px;
+    height: auto; /* Adjust height to content */
+  }
+
+  .dashboard-content {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .left, .right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .map {
+    height: 250px; /* Adjust map size for small screens */
+  }
+
+  .user-info, .food-order, .online-games, .emergency-support, .transport-option {
+    padding: 15px;
+  }
+}
+
+.left h2 , .right h2 {
+  color: black;
+}
+.section-transport-option div{
+  display: flex;
+  flex-direction: column;
+}

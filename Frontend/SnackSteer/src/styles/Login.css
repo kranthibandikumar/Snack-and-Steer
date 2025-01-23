@@ -1,0 +1,116 @@
+/* Overall container for the login page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #eff8ff, #daf7e0); /* Softer gradients */
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+/* Styling for the form container with a glassmorphism effect */
+.login-form {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    backdrop-filter: blur(15px); /* Enhanced blur effect for modern aesthetics */
+    -webkit-backdrop-filter: blur(15px); /* For Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Softer border */
+    width: 400px;
+    padding: 30px 20px;
+    border-radius: 20px; /* More rounded corners for a sleek design */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title styling */
+.login-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #223843; /* Softer dark color */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Error message styling */
+.login-error {
+    color: #e63946;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Form fields container */
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual input group */
+.form-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-icon {
+    position: absolute;
+    left: 10px;
+    color: #4a5568; /* Neutral gray icon color */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.6);
+    color: #2c3e50;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+    color: rgba(44, 62, 80, 0.7);
+}
+
+.form-group input:focus {
+    border-color: #2a9d8f; /* Vibrant teal focus color */
+    box-shadow: 0 0 5px rgba(42, 157, 143, 0.5);
+}
+
+/* Login button */
+.form-button {
+    background: linear-gradient(135deg, #2a9d8f, #457b9d); /* Inspired by gradient buttons */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-button:hover {
+    background: linear-gradient(135deg, #457b9d, #2a9d8f);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+.login-footer {
+    font-size: 14px;
+    color: #2c3e50;
+    margin-top: 15px;
+}
+
+.login-link {
+    color: #2a9d8f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.login-link:hover {
+    color: #457b9d;
+}

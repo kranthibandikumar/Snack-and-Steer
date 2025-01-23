@@ -1,0 +1,119 @@
+/* @format */
+
+/* Navbar Container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #96b6f6;
+  padding: 15px 20px; /* Adjust padding for left and right margins */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0 auto; /* Center the navbar horizontally */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 80px; /* Set an appropriate height for the navbar */
+}
+
+/* Left Section (Brand) */
+#left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#name {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* Right Section (Links and Button) */
+#right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#right a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+  width: 120px; /* Ensures equal width for all links */
+  text-align: center;
+}
+
+#right a:hover {
+  background-color: #3b72d6;
+}
+
+/* User Profile Button */
+.sayhellobutton {
+  background-color: #ff5c8d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.sayhellobutton:hover {
+  background-color: #e84a7f;
+}
+
+.sayhellobutton i {
+  margin-right: 8px;
+  font-size: 1.3rem;
+}
+
+/* Logout Link Styling */
+#right a:last-child {
+  background-color: #e84a7f;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+#right a:last-child:hover {
+  background-color: #d13e6c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+  }
+
+  #right {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  #right a {
+    font-size: 1rem;
+  }
+
+  .sayhellobutton {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
